@@ -146,14 +146,14 @@ public final class DuelPlugin extends JavaPlugin implements Listener {
         Inventory inv = Bukkit.createInventory(null, 27, MENU_TITLE_CLASS);
 
         inv.setItem(SLOT_SWORD, icon(Material.DIAMOND_SWORD, "§a검",
-                "§7근접전 특화 (데미지 +10%)", "§e클릭하여 선택"));
+                "§e클릭하여 선택"));
         inv.setItem(SLOT_BOW, icon(Material.BOW, "§a활",
-                "§7원거리 특화 (무한 화살)", "§e클릭하여 선택"));
+                 "§e클릭하여 선택"));
 
         ItemStack lance = new ItemStack(Material.IRON_AXE);
         ItemMeta lm = lance.getItemMeta();
         lm.setDisplayName("§a창");
-        lm.setLore(Arrays.asList("§7리소스팩: 도끼→창", "§e클릭하여 선택"));
+        lm.setLore(Arrays.asList( "§e클릭하여 선택"));
         lance.setItemMeta(lm);
         lance.addUnsafeEnchantment(Enchantment.DAMAGE_UNDEAD, 3);
         lance.addUnsafeEnchantment(Enchantment.DAMAGE_ALL, 3);
